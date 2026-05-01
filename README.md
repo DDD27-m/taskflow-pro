@@ -4,25 +4,29 @@ A clean, professional task management web application built with vanilla HTML, C
 
 ![TaskFlow Pro](https://img.shields.io/badge/status-complete-brightgreen) ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
----
 
-## Features
+# TaskFlow Pro
 
-- **Add tasks** with title, priority, due date, project tag, and assignee
-- **Complete tasks** by clicking the circular checkbox
-- **Filter** between All, Active, and Completed views
-- **Search** tasks by name or project tag
-- **Sort** tasks by default order, priority, or due date
-- **Overdue detection** — tasks past their due date are highlighted automatically
-- **Stats bar** tracking total, active, done, and overdue counts
-- **Persistent storage** — tasks saved to `localStorage` and survive page reloads
-- **Responsive design** — works on desktop and mobile
+A task management web app I built using HTML, CSS, and JavaScript. No frameworks, no libraries — just plain code.
 
 ---
 
-## Project Structure
+## About the Project
 
-```
+I built this as a productivity tool to help manage daily tasks. You can add tasks, set priorities and due dates, mark them as done, and filter or search through them. Everything is saved in the browser so your tasks stay even after you close the tab.
+
+---
+
+## What it can do
+
+- Add tasks with a title, priority level, due date, and project tag
+- Mark tasks as complete
+- Filter between All, Active, and Completed tasks
+- Search tasks by name
+- Sort by priority or due date
+- Highlights overdue tasks automatically
+- Saves tasks in the browser so nothing is lost on refresh
+
 taskflow-pro/
 ├── index.html          # Main HTML — layout and modal markup
 ├── css/
@@ -32,83 +36,40 @@ taskflow-pro/
 │   ├── render.js       # Pure DOM rendering functions
 │   └── app.js          # App state, event binding, actions
 └── README.md
-```
+---
 
-### File Responsibilities
+## Files in this project
 
-| File | Role |
-|------|------|
-| `index.html` | Page structure, sidebar, task list container, modal |
-| `css/style.css` | CSS variables, layout (flexbox), component styles, responsive breakpoints |
-| `js/data.js` | Seed tasks, `TAG_LABELS` map, `loadTasks()`, `saveTasks()`, `loadNextId()` |
-| `js/render.js` | `renderTaskList()`, `renderStats()`, `buildTaskCardHTML()`, `formatDue()` |
-| `js/app.js` | State (`tasks`, `filter`, `query`, `sortMode`), event listeners, `toggleTask()`, `addTask()` |
+- index.html — the main page
+- css/style.css — all the styling
+- js/data.js — stores the task data and handles saving
+- js/render.js — displays tasks on the screen
+- js/app.js — handles everything the user does
 
 ---
 
-## Getting Started
+## How to run it
 
-No installation or build step needed.
-
-### Option 1 — Open directly
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/taskflow-pro.git
-cd taskflow-pro
-
-# Open in browser
-open index.html         # macOS
-start index.html        # Windows
-xdg-open index.html     # Linux
-```
-
-### Option 2 — Local dev server (recommended)
-```bash
-# Using Python
-python3 -m http.server 3000
-
-# Using Node.js (npx)
-npx serve .
-
-# Then open http://localhost:3000
-```
+Just download the project and open index.html in any browser. That's it. No setup needed.
 
 ---
 
-## Usage
+## Built with
 
-| Action | How |
-|--------|-----|
-| Add a task | Click **Add task** button (top right) |
-| Complete a task | Click the circle checkbox on the left |
-| Filter tasks | Use the All / Active / Completed tabs |
-| Search | Type in the search box |
-| Sort | Click the **Sort** button to cycle: Default → Priority → Due date |
+- HTML
+- CSS
+- JavaScript
 
 ---
 
-## Design Decisions
+## Author
 
-- **Vanilla JS** — No dependencies, loads instantly, easy to understand and extend
-- **CSS Variables** — All colors and radii defined in `:root` for easy theming
-- **Separation of concerns** — Data, rendering, and app logic in separate files
-- **LocalStorage persistence** — Tasks survive page reloads without a backend
-- **XSS-safe rendering** — All user content escaped via `escapeHTML()` before insertion
+Made by Divya Dharsini D
+GitHub: https://github.com/YOUR_USERNAME
 
----
 
-## Extending
 
-Ideas for future features:
-- [ ] Drag-and-drop reordering
-- [ ] Kanban board view
-- [ ] Multiple assignees / team support
-- [ ] Backend API integration (Node/Express or Supabase)
-- [ ] Dark mode toggle
-- [ ] Export to CSV
 
----
 
-## License
 
-MIT — free to use, modify, and distribute.
+
