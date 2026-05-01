@@ -36,7 +36,6 @@ taskflow-pro/
 │   ├── render.js       # Pure DOM rendering functions
 │   └── app.js          # App state, event binding, actions
 └── README.md
----
 
 ## Files in this project
 
