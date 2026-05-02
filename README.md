@@ -64,7 +64,7 @@ Just download the project and open index.html in any browser. That's it. No setu
 ## Author
 
 Made by Divya Dharsini D
-GitHub: https://github.com/YOUR_USERNAME
+
 
 
 
